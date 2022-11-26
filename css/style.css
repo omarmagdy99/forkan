@@ -1,3 +1,5 @@
+/* Start global */
+
 * {
     font-family: 'Harmattan', sans-serif;
 }
@@ -5,6 +7,49 @@
 .navbar-brand {
     font-size: xx-large;
 }
+
+@media screen and (min-width: 576px) {
+    .homeHeader p {
+        font-size: 6vw;
+
+    }
+
+    .homeHeader h1 {
+        font-size: 11vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .homeHeader p {
+        font-size: 9vw;
+
+    }
+
+    .homeHeader h1 {
+        font-size: 15vw;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .homeHeader p {
+        font-size: 5vw;
+
+    }
+
+    .homeHeader h1 {
+        font-size: 10vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (max-width: 1400px) {}
+
+/* END global */
 
 
 .homeHeader {
@@ -21,7 +66,7 @@
     flex-direction: column;
 }
 
-#particles-js{
+#particles-js {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -29,37 +74,17 @@
     width: 100%;
     height: 100vh;
 }
-.navbar{
+
+.navbar {
     font-size: x-large;
 }
-.homeHeader p{
-    font-size: 9vh;
 
-}
-.homeHeader h1{
-    font-size: 17vh;
-}
 
-@media screen and (max-width: 992px) {
-   
 
-nav{
-    background-color: white;
-    color: black
-}
-#navbar a{
-    color: black !important;
-}
-}
-@media screen and (max-width: 768px) {
-   
-    .homeHeader p{
-        font-size: 7vh;
-    
-    }
-    .homeHeader h1{
-        font-size: 13vh;
-    }
-   
+/* fqh page */
 
+.fqhBody{
+    height: 100vh;
+    width: 100%;
 }
+/* fqh page */
