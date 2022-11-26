@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-5 mb-5 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active  " aria-current="page" href="/index.html">الجدول</a>
+                            <a class="nav-link active  " aria-current="page" href="#fqh">الفقه</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -60,23 +60,41 @@
 
     <!-- start main  -->
     <main>
-        <div class="fqhBody my-5 fs-3 container">
+        <!-- Start homeHeader -->
+        <section class="fqhHeader text-white d-flex justify-content-center align-items-center flex-column">
+            <h1 class=" fs-1">مادة الفقه</h1>
+            <p class="fs-3 h3"> ( مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ )</p>
+            <div id="particles-js"></div>
+        </section>
+        <!-- END homeHeader -->
+
+        <!-- start body -->
+        <section class="fqhBody my-5 fs-3 container text-center" id="fqh">
+            <h3 class="sectionHeader d-inline-flex p-2 mb-5 ">الفقه</h3>
+            
             <nav class="py-5">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-sound-tab" data-bs-toggle="tab" data-bs-target="#nav-sound"
-                        type="button" role="tab" aria-controls="nav-sound" aria-selected="true">المكتبة الصوتية</button>
-                    <button class="nav-link" id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
+                    <button class="nav-link active" id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
                         type="button" role="tab" aria-controls="nav-pdf" aria-selected="false">نسخة الكتاب</button>
-                    
+                    <button class="nav-link " id="nav-sound-tab" data-bs-toggle="tab" data-bs-target="#nav-sound"
+                        type="button" role="tab" aria-controls="nav-sound" aria-selected="true">المكتبة الصوتية</button>
+
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-sound" role="tabpanel" aria-labelledby="nav-sound-tab">
-                    <a href="https://drive.google.com/file/d/1-597huBzdizLSqRfVX58GVuoZoCsMvCu/view?usp=sharing" class="btn btn-outline-primary fs-4" target="_blank">شرح الفقه </a>
+                <div class="tab-pane fade show active d-flex justify-content-center flex-column align-content-center h-100"
+                    id="nav-pdf" role="tabpanel" aria-labelledby="nav-pdf-tab">
+                    <a href="https://drive.google.com/file/d/1y0SzSetkLQP7zvWxL_Su1p2WvMqeGtvA/view?usp=sharing "
+                        class="btn btn-outline-danger w-100 fs-3" target="_blank">مشاهدة وتحميل</a>
                 </div>
-                <div class="tab-pane fade" id="nav-pdf" role="tabpanel" aria-labelledby="nav-pdf-tab">...</div>
+                <div class="tab-pane fade " id="nav-sound" role="tabpanel" aria-labelledby="nav-sound-tab">
+                    <a href="https://drive.google.com/file/d/1-597huBzdizLSqRfVX58GVuoZoCsMvCu/view?usp=sharing"
+                        class="btn btn-outline-primary fs-4" target="_blank">شرح الفقه </a>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- start body -->
+
     </main>
     <!-- end main  -->
 
