@@ -49,6 +49,11 @@
 
 @media screen and (max-width: 1400px) {}
 
+
+.sectionHeader{
+    border-top: 4px solid black;
+    border-bottom: 4px solid #cfe2ff;
+}
 /* END global */
 
 
