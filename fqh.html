@@ -8,7 +8,7 @@
     <title>Forkan</title>
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" type="image/png" sizes="32x32" href="/pic/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -32,6 +32,12 @@
                             <a class="nav-link active  " aria-current="page" href="#fqh">الفقه</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active  mx-lg-5" aria-current="page" data-bs-toggle="offcanvas"
+                                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                الاشعارات <span class="badge bg-danger ">4</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active  " aria-current="page" href="index.html">الشاشة الرئيسية</a>
                         </li>
 
@@ -42,6 +48,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="fqh.html">الفقه</a></li>
+
                                 <li><a class="dropdown-item" href="#">العقيدة</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -74,7 +81,7 @@
         <!-- start body -->
         <section class="fqhBody my-5 fs-3 container text-center" id="fqh">
             <h3 class="sectionHeader d-inline-flex p-2 mb-5 ">الفقه</h3>
-            
+
             <nav class="py-5">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
@@ -85,15 +92,16 @@
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active  align-content-center h-100"
-                    id="nav-pdf" role="tabpanel" aria-labelledby="nav-pdf-tab">
+                <div class="tab-pane fade show active  align-content-center h-100" id="nav-pdf" role="tabpanel"
+                    aria-labelledby="nav-pdf-tab">
                     <a href="https://drive.google.com/file/d/1y0SzSetkLQP7zvWxL_Su1p2WvMqeGtvA/view?usp=sharing "
                         class="btn btn-outline-danger w-100 fs-3" target="_blank">مشاهدة وتحميل</a>
                 </div>
                 <div class="tab-pane fade " id="nav-sound" role="tabpanel" aria-labelledby="nav-sound-tab">
                     <!-- <a href="https://drive.google.com/file/d/1-597huBzdizLSqRfVX58GVuoZoCsMvCu/view?usp=sharing"
                         class="btn btn-outline-primary fs-4" target="_blank">شرح الفقه </a> -->
-                        <p class="bg-danger text-white rounded-1 py-4">لم يتم تحميل الشرح حتى الأن ولكن إنتظر لتجد الخبر السار </p>
+                    <p class="bg-danger text-white rounded-1 py-4">لم يتم تحميل الشرح حتى الأن ولكن إنتظر لتجد الخبر
+                        السار </p>
                 </div>
             </div>
         </section>
@@ -101,7 +109,6 @@
 
     </main>
     <!-- end main  -->
-
 
     <!-- start footer  -->
     <!-- style="background-color: #929fba" -->
