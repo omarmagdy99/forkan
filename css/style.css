@@ -9,42 +9,11 @@
     font-size: xx-large;
 }
 
-@media screen and (min-width: 576px) {
-    /* .homeHeader p {
-        font-size: 6vw;
+@media screen and (min-width: 576px) {}
 
-    }
+@media screen and (min-width: 768px) {}
 
-    .homeHeader h1 {
-        font-size: 11vw;
-    } */
-}
-
-@media screen and (min-width: 768px) {
-
-    /* .homeHeader p {
-        font-size: 9vw;
-
-    }
-
-    .homeHeader h1 {
-        font-size: 15vw;
-    } */
-
-
-}
-
-@media screen and (min-width: 992px) {
-
-    /* .homeHeader p {
-        font-size: 5vw;
-
-    }
-
-    .homeHeader h1 {
-        font-size: 10vw;
-    } */
-}
+@media screen and (min-width: 992px) {}
 
 @media screen and (min-width: 1200px) {}
 
@@ -54,6 +23,30 @@
 .sectionHeader {
     border-top: 4px solid black;
     border-bottom: 4px solid #cfe2ff;
+}
+
+.fqhBody, .aqidhBody {
+    height: 100vh;
+    width: 100%;
+}
+
+.fqhHeader, .aqidhHeader, .nawawyHeader {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.headerP {
+    font-size: 3vw;
+
+}
+
+.headerH1 {
+    font-size: 7vw;
 }
 
 /* END global */
@@ -86,30 +79,31 @@
     font-size: x-large;
 }
 
-.homeHeader p {
-    font-size: 5vw;
 
-}
-
-.homeHeader h1 {
-    font-size: 10vw;
-}
 
 /* fqh page */
-
-.fqhBody {
-    height: 100vh;
-    width: 100%;
-}
 
 .fqhHeader {
-    position: relative;
-    height: 100vh;
-    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../pic/fqhBG.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
 }
 
 /* fqh page */
+
+
+/* aqidh page */
+.aqidhHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../pic/lcwaikiki-20-768x512\ \(1\).jpg');
+
+}
+
+/* aqidh page */
+
+
+/* nawawy page */
+.nawawyHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../pic/nawawyBg.jpg');
+
+}
+
+/* nawawy page */

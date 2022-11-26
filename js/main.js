@@ -1,26 +1,79 @@
 document.write(`
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-<div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">الإشعارات</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-</div>
-<div class="offcanvas-body">
+  </div>
+  <div class="offcanvas-body">
     <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
-        lists, etc.
+      حافظ على مراجعة الإشعارات حتى تعلم التكليفات التي في الدرس
     </div>
     <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-bs-toggle="dropdown">
-            Dropdown button
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+      <table class="table table-primary">
+        <tr class="table-dark">
+          <th class="table-dark">العقيدة </th>
+        </tr>
+        <tr class="table-warning">
+          <td class="table-warning">مراجعة من (صور ليست من الموالاة)إلى (نهاية باب الولاء و البراء)</td>
+        </tr>
+      </table>
+
+      <table class="table table-primary">
+        <tr>
+          <th class="table-dark">التجويد</th>
+        </tr>
+
+        <tr>
+          <td class="table-warning">إستخرج أحكام النون الساكنه و التنوين والميم الساكنه من سورة الفيل
+          </td>
+        </tr>
+
+      </table>
     </div>
-</div>
+  </div>
 </div>
 
 `);
+
+document.getElementById("navbar").innerHTML += `
+<div class="container-fluid">
+  <a class=" navbar-brand " href="index.html" id="logoFor">الفرقان</a>
+  <button class="navbar-toggler bg-dark " type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav me-5 mb-5 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active  " aria-current="page" href="index.html">الجدول</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active  mx-lg-3" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvasExample"
+          role="button" aria-controls="offcanvasExample">
+          الاشعارات <span class="badge bg-danger ">2</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active  mx-lg-2" aria-current="page" href="fqh.html">الفقه</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active  mx-lg-2" aria-current="page" href="aqidh.html">العقيدة</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active  mx-lg-2" aria-current="page" href="nawawy.html">الحديث</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active  mx-lg-2" aria-current="page" href="fqh.html">التجويد</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active  mx-lg-2" aria-current="page" href="fqh.html">التزكية</a>
+      </li>
+
+
+    </ul>
+
+  </div>
+</div>
+
+`;
