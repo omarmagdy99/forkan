@@ -14,7 +14,7 @@ document.write(`
           <th class="table-dark">العقيدة </th>
         </tr>
         <tr class="table-warning">
-          <td class="table-warning">مراجعة من (صور ليست من الموالاة)إلى (نهاية باب الولاء و البراء)</td>
+          <td class="table-warning">مراجعة باب توحيد الإلوهية والربوبية والأسماء و الصفات </td>
         </tr>
       </table>
 
@@ -24,7 +24,11 @@ document.write(`
         </tr>
 
         <tr>
-          <td class="table-warning">إستخرج أحكام النون الساكنه و التنوين والميم الساكنه من سورة الفيل
+          <td class="table-warning">الواجب سورة الطارق (إستخرج أحكام التجويد)
+          </td>
+        </tr>
+        <tr>
+          <td class="table-warning">إمتحان المره القادمة
           </td>
         </tr>
 
@@ -34,6 +38,7 @@ document.write(`
 </div>
 
 `);
+
 
 document.getElementById("navbar").innerHTML += `
 <div class="container-fluid">
@@ -45,13 +50,14 @@ document.getElementById("navbar").innerHTML += `
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
     <ul class="navbar-nav me-5 mb-5 mb-lg-0">
+      ${ELM}
       <li class="nav-item">
         <a class="nav-link active  " aria-current="page" href="index.html">الجدول</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active  mx-lg-3" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvasExample"
-          role="button" aria-controls="offcanvasExample">
-          الاشعارات <span class="badge bg-danger ">2</span>
+        <a class="nav-link active  mx-lg-3" onclick="removeNotify()" aria-current="page" data-bs-toggle="offcanvas"
+          href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          الاشعارات <span class="badge bg-danger " id="notify">3</span>
         </a>
       </li>
       <li class="nav-item">
@@ -77,3 +83,8 @@ document.getElementById("navbar").innerHTML += `
 </div>
 
 `;
+
+
+function removeNotify(){
+document.getElementById("notify").classList.add('d-none');
+}
