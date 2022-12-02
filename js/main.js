@@ -60,9 +60,9 @@ document.getElementById("navbar").innerHTML += `
         <a class="nav-link active  " aria-current="page" href="index.html">الجدول</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active  mx-lg-3" onclick="removeNotify()" aria-current="page" data-bs-toggle="offcanvas"
+        <a class="nav-link active  mx-lg-3 d-sm-none d-lg-block" onclick="removeNotify()" aria-current="page" data-bs-toggle="offcanvas"
           href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-          الاشعارات <span class="badge bg-danger notify" >${notifyCount}</span>
+          الاشعارات <span class="badge bg-danger notify " >${notifyCount}</span>
         </a>
       </li>
       <li class="nav-item">
@@ -88,7 +88,7 @@ document.getElementById("navbar").innerHTML += `
 </div>
 
 
-<div id="notifyIcon" class=" position-fixed text-center bg-white p-1" aria-current="page" data-bs-toggle="offcanvas"
+<div id="notifyIcon" class=" position-fixed text-center bg-white p-1 d-lg-none" aria-current="page" data-bs-toggle="offcanvas"
 href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="removeNotify()">
 <span class="badge bg-danger notify position-absolute">${notifyCount}</span>
 <i class="fa-solid fa-bell  position-absolute notfyAlarm"></i>
