@@ -61,7 +61,7 @@ document.getElementById("navbar").innerHTML += `
       <li class="nav-item">
         <a class="nav-link active  mx-lg-3" onclick="removeNotify()" aria-current="page" data-bs-toggle="offcanvas"
           href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-          الاشعارات <span class="badge bg-danger " id="notify">3</span>
+          الاشعارات <span class="badge bg-danger " id="notify">4</span>
         </a>
       </li>
       <li class="nav-item">
