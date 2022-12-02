@@ -33,6 +33,10 @@ document.write(`
         </tr>
 
       </table>
+      <div class="p-2 bg-secondary text-white text-center fs-3">
+        <p>يمكنكم معرفة جميع واجبات التجويد من خلال الرابط التالي</p>
+        <a href="tagwid.html" class="btn btn-primary rounded">من هنا</a>
+      </div>
     </div>
   </div>
 </div>
