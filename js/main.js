@@ -70,7 +70,7 @@ document.getElementById("navbar").innerHTML += `
         <a class="nav-link active  mx-lg-2" aria-current="page" href="nawawy.html">الحديث</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active  mx-lg-2" aria-current="page" href="fqh.html">التجويد</a>
+        <a class="nav-link active  mx-lg-2" aria-current="page" href="tagwid.html">التجويد</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active  mx-lg-2" aria-current="page" href="fqh.html">التزكية</a>

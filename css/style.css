@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.fqhHeader, .aqidhHeader, .nawawyHeader {
+.fqhHeader, .aqidhHeader, .nawawyHeader,.tagwidHeader {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -107,3 +107,11 @@
 }
 
 /* nawawy page */
+
+/* tagwid page */
+.tagwidHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../pic/bgTagwid.jpg');
+
+}
+
+/* tagwid page */
