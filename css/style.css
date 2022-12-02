@@ -49,6 +49,27 @@
     font-size: 7vw;
 } */
 
+
+#notifyIcon{
+    top: 50vh;
+    right: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+}
+#notifyIcon .notfyAlarm{
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+}
+#notifyIcon .notify{
+    top: -5px;
+    left: -20px;
+    width :30px;
+    
+}
 /* END global */
 
 

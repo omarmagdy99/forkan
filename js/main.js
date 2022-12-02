@@ -1,3 +1,4 @@
+let notifyCount=4;
 document.write(`
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
@@ -61,7 +62,7 @@ document.getElementById("navbar").innerHTML += `
       <li class="nav-item">
         <a class="nav-link active  mx-lg-3" onclick="removeNotify()" aria-current="page" data-bs-toggle="offcanvas"
           href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-          الاشعارات <span class="badge bg-danger " id="notify">4</span>
+          الاشعارات <span class="badge bg-danger notify" >${notifyCount}</span>
         </a>
       </li>
       <li class="nav-item">
@@ -86,9 +87,21 @@ document.getElementById("navbar").innerHTML += `
   </div>
 </div>
 
+
+<div id="notifyIcon" class=" position-fixed text-center bg-white p-1" aria-current="page" data-bs-toggle="offcanvas"
+href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="removeNotify()">
+<span class="badge bg-danger notify position-absolute">${notifyCount}</span>
+<i class="fa-solid fa-bell  position-absolute notfyAlarm"></i>
+</div>
 `;
 
 
 function removeNotify(){
-document.getElementById("notify").classList.add('d-none');
+let notify=document.querySelectorAll(".notify");
+notify.forEach(not => {
+  not.classList.add('d-none');
+});
+
+
+// .classList.add('d-none');
 }
