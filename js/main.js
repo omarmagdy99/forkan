@@ -1,4 +1,4 @@
-let notifyCount=4;
+let notifyCount = 4;
 document.write(`
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
@@ -43,7 +43,6 @@ document.write(`
 </div>
 
 `);
-
 
 document.getElementById("navbar").innerHTML += `
 <div class="container-fluid">
@@ -93,15 +92,35 @@ href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick=
 <span class="badge bg-danger notify position-absolute">${notifyCount}</span>
 <i class="fa-solid fa-bell  position-absolute notfyAlarm"></i>
 </div>
+<!-- scroll top button -->
+<button class="scrollTop bg-dark position-fixed pt-1">
+    <i class="fa-solid fa-arrow-up text-white"></i>
+</button>
+<!-- scroll top button -->
+
 `;
 
+function removeNotify() {
+  let notify = document.querySelectorAll(".notify");
+  notify.forEach((not) => {
+    not.classList.add("d-none");
+  });
 
-function removeNotify(){
-let notify=document.querySelectorAll(".notify");
-notify.forEach(not => {
-  not.classList.add('d-none');
-});
-
-
-// .classList.add('d-none');
+  // .classList.add('d-none');
 }
+
+let scrollBtn = document.querySelector(".scrollTop");
+window.onscroll = () => {
+  if (window.scrollY <= 200) {
+    scrollBtn.style.cssText = "bottom:-70px;";
+  } else {
+    scrollBtn.style.cssText = "bottom:20px;";
+  }
+};
+scrollBtn.addEventListener("click", () => {
+  scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth",
+  });
+});

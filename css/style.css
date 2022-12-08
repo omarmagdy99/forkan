@@ -70,6 +70,22 @@
     width :30px;
     
 }
+
+
+
+/* scroll to top button  */
+.scrollTop{
+    right: 20px;
+    bottom: -70px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+
+/* scroll to top button  */
 /* END global */
 
 
