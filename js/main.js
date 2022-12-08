@@ -59,8 +59,8 @@ document.getElementById("navbar").innerHTML += `
         <a class="nav-link active  " aria-current="page" href="index.html">الجدول</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active  mx-lg-3 d-sm-none d-lg-block" onclick="removeNotify()" aria-current="page" data-bs-toggle="offcanvas"
-          href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <a class="nav-link active  mx-lg-3 d-sm-none d-lg-block notifyRemovePc"  aria-current="page" data-bs-toggle="offcanvas"
+          href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="notifyRemove()">
           الاشعارات <span class="badge bg-danger notify " >${notifyCount}</span>
         </a>
       </li>
@@ -87,8 +87,8 @@ document.getElementById("navbar").innerHTML += `
 </div>
 
 
-<div id="notifyIcon" class=" position-fixed text-center bg-white p-1 d-lg-none" aria-current="page" data-bs-toggle="offcanvas"
-href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="removeNotify()">
+<div id="notifyIcon" class=" notifyRemoveMob position-fixed text-center bg-white p-1 d-lg-none" aria-current="page" data-bs-toggle="offcanvas"
+href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="notifyRemove()">
 <span class="badge bg-danger notify position-absolute">${notifyCount}</span>
 <i class="fa-solid fa-bell  position-absolute notfyAlarm"></i>
 </div>
@@ -100,15 +100,26 @@ href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick=
 
 `;
 
-function removeNotify() {
-  let notify = document.querySelectorAll(".notify");
+// notification button
+let notifyRemoveMob = document.querySelector(".notifyRemoveMob");
+let removeNotifyPc;
+let notify = document.querySelectorAll(".notify");
+if(localStorage.getItem("notify")){
   notify.forEach((not) => {
     not.classList.add("d-none");
   });
-
-  // .classList.add('d-none');
 }
 
+function notifyRemove() {
+  window.localStorage.setItem("notify", "click");
+  notify.forEach((not) => {
+    not.classList.add("d-none");
+  });
+};
+// notification button
+
+
+// scroll to top
 let scrollBtn = document.querySelector(".scrollTop");
 window.onscroll = () => {
   if (window.scrollY <= 200) {
@@ -124,3 +135,4 @@ scrollBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+// scroll to top
