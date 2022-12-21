@@ -59,7 +59,7 @@ document.getElementById("navbar").innerHTML += `
         <a class="nav-link active  " aria-current="page" href="index.html">الجدول</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active  mx-lg-3 d-sm-none d-lg-block notifyRemovePc"  aria-current="page" data-bs-toggle="offcanvas"
+        <a class="nav-link active  mx-lg-3  notifyRemovePc"  aria-current="page" data-bs-toggle="offcanvas"
           href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="notifyRemove()">
           الاشعارات <span class="badge bg-danger notify " >${notifyCount}</span>
         </a>
@@ -87,7 +87,7 @@ document.getElementById("navbar").innerHTML += `
 </div>
 
 
-<div id="notifyIcon" class=" notifyRemoveMob position-fixed text-center bg-white p-1 d-lg-none" aria-current="page" data-bs-toggle="offcanvas"
+<div id="notifyIcon" class=" notifyRemoveMob position-fixed text-center bg-white p-1 " aria-current="page" data-bs-toggle="offcanvas"
 href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="notifyRemove()">
 <span class="badge bg-danger notify position-absolute">${notifyCount}</span>
 <i class="fa-solid fa-bell  position-absolute notfyAlarm"></i>
@@ -102,12 +102,14 @@ href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick=
 
 // notification button
 let notifyRemoveMob = document.querySelector(".notifyRemoveMob");
+let notifyIcon = document.querySelector("#notifyIcon");
 let removeNotifyPc;
 let notify = document.querySelectorAll(".notify");
-if(localStorage.getItem("notify")){
+if (localStorage.getItem("notify")) {
   notify.forEach((not) => {
     not.classList.add("d-none");
   });
+  notifyIcon.classList.add("d-none");
 }
 
 function notifyRemove() {
@@ -115,9 +117,9 @@ function notifyRemove() {
   notify.forEach((not) => {
     not.classList.add("d-none");
   });
-};
+  notifyIcon.classList.add("d-none");
+}
 // notification button
-
 
 // scroll to top
 let scrollBtn = document.querySelector(".scrollTop");

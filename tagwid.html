@@ -43,7 +43,10 @@
             <nav class="py-5">
 
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-assignment-tab" data-bs-toggle="tab"
+                    <button class="nav-link active" id="nav-history-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-history" type="button" role="tab" aria-controls="nav-history"
+                        aria-selected="true">ملاحظات للواجب </button>
+                    <button class="nav-link " id="nav-assignment-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-assignment" type="button" role="tab" aria-controls="nav-assignment"
                         aria-selected="true">الواجبات</button>
                     <button class="nav-link " id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
@@ -57,8 +60,69 @@
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-assignment" role="tabpanel"
-                    aria-labelledby="nav-assignment-tab">
+                <!-- start tab  -->
+                <div class="tab-pane fade show active" id="nav-history" role="tabpanel"
+                    aria-labelledby="nav-history-tab">
+                    <div class="list-group">
+
+                        <p class="mb-1 fs-5"><span class="text-white bg-danger px-2">تنويه</span><br> نظراً لإختلاف
+                            أرقام الصحف في نسخ الكتب فقد تم<br> كتابة الصفح في النسخه ال <br>pdf المذكورة بالموقع</p>
+                        <a href="#nav-history" class="list-group-item list-group-item-action active"
+                            aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">أربع أبواب </h5>
+                            </div>
+                            <p class="mb-1">مادة التجويد</p>
+                            <small>ما تم دراسته بمادة التجويد</small>
+                        </a>
+                        <!-- start unit 1 -->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الأول</h5>
+                            </div>
+                            <p class="mb-1">
+                                علامات التشكيل
+                            </p>
+                        </a>
+                        <!-- end unit 1 -->
+                        <!-- start unit 2 -->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الثاني</h5>
+                            </div>
+                            <p class="mb-1">
+                                 أحكام النون الساكنة والتنوين
+                            </p>
+                            <small class="text-muted">صفحة 12</small>
+                        </a>
+                        <!-- end unit 2 -->
+                        <!-- start unit 3 -->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الثالث</h5>
+                            </div>
+                            <p class="mb-1">
+                                أحكام النون والميم المشددتين
+                            </p>
+                            <small class="text-muted">صفحة 26</small>
+                        </a>
+                        <!-- end unit 3 -->
+                        <!-- start unit 4 -->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الرابع</h5>
+                            </div>
+                            <p class="mb-1">
+                                أحكام الميم الساكنة	 
+                            </p>
+                            <small class="text-muted">صفحة 28</small>
+                        </a>
+                        <!-- end unit 4 -->
+                    </div>
+                </div>
+                <!-- end tab  -->
+                <!-- start tab  -->
+                <div class="tab-pane fade " id="nav-assignment" role="tabpanel" aria-labelledby="nav-assignment-tab">
                     <table class="table table-primary fs-5">
                         <thead>
                             <tr class="table-dark">
@@ -140,17 +204,25 @@
                         </tfoot>
                     </table>
                 </div>
+                <!-- end tab  -->
 
+                <!-- start tab  -->
                 <div class="tab-pane fade   align-content-center h-100" id="nav-pdf" role="tabpanel"
                     aria-labelledby="nav-pdf-tab">
                     <a href="https://drive.google.com/file/d/1k6sXjviPPzo4pH_b3SbJqQaXOjOCsfrb/view?usp=sharing "
                         class="btn btn-outline-danger w-100 fs-3" target="_blank">مشاهدة وتحميل</a>
                 </div>
+                <!-- end tab  -->
+
+                <!-- start tab  -->
                 <div class="tab-pane fade " id="nav-sound" role="tabpanel" aria-labelledby="nav-sound-tab">
 
                     <p class="bg-danger text-white rounded-1 py-4">لم يتم تحميل الشرح حتى الأن ولكن إنتظر لتجد الخبر
                         السار </p>
                 </div>
+                <!-- end tab  -->
+
+                <!-- start tab  -->
                 <div class="tab-pane fade " id="nav-steps" role="tabpanel" aria-labelledby="nav-steps-tab">
 
                     <p class="bg-secondary text-white rounded-1 py-4 px-3">
@@ -163,6 +235,8 @@
                         رقم 3 ورقم 2 ولا يتم إستخراج تجويد درس رقم 4
                     </p>
                 </div>
+                <!-- end tab  -->
+
             </div>
         </section>
         <!-- start body -->

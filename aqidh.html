@@ -29,7 +29,8 @@
         <!-- Start homeHeader -->
         <section class="aqidhHeader text-white d-flex justify-content-center align-items-center flex-column">
             <h1 class=" fs-md-1 headerH1">مادة العقيدة</h1>
-            <p class="fs-md-4 headerP px-5 text-center"> ( وستفترق هذه الأمة على ثلاث وسبعين فرقة كلها في النار إلا واحدة، قيل: من هي يا رسول الله؟ قال: من كان على مثل ما أنا عليه وأصحابي)</p>
+            <p class="fs-md-4 headerP px-5 text-center"> ( وستفترق هذه الأمة على ثلاث وسبعين فرقة كلها في النار إلا
+                واحدة، قيل: من هي يا رسول الله؟ قال: من كان على مثل ما أنا عليه وأصحابي)</p>
             <div id="particles-js"></div>
         </section>
         <!-- END homeHeader -->
@@ -40,7 +41,10 @@
 
             <nav class="py-5">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
+                    <button class="nav-link active" id="nav-history-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-history" type="button" role="tab" aria-controls="nav-history"
+                        aria-selected="false">ما تم دراسته</button>
+                    <button class="nav-link " id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
                         type="button" role="tab" aria-controls="nav-pdf" aria-selected="false">نسخة الكتاب</button>
                     <button class="nav-link " id="nav-sound-tab" data-bs-toggle="tab" data-bs-target="#nav-sound"
                         type="button" role="tab" aria-controls="nav-sound" aria-selected="true">المكتبة الصوتية</button>
@@ -48,18 +52,103 @@
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active  align-content-center h-100" id="nav-pdf" role="tabpanel"
+                <!-- start tab  -->
+                <div class="tab-pane fade show active  align-content-center h-100" id="nav-history" role="tabpanel"
+                    aria-labelledby="nav-history-tab">
+                    <div class="list-group">
+                        <p class="mb-1 fs-5"><span class="text-white bg-danger px-2">تنويه</span><br> نظراً لإختلاف
+                            أرقام الصحف في نسخ الكتب فقد تم<br> كتابة الصفح في النسخه ال <br>pdf المذكورة بالموقع</p>
+                        <a href="#nav-history" class="list-group-item list-group-item-action active"
+                            aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ثلاثة أبواب </h5>
+                            </div>
+                            <p class="mb-1">مادة العقيدة</p>
+                            <small>ما تم دراسته بمادة العقيدة</small>
+                        </a>
+                        <!-- start unit 1 lesson 1-->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الأول</h5>
+                                <small class="text-muted">الفصل الأول</small>
+                            </div>
+                            <p class="mb-1">التوحيد وأصول الإيمان</p>
+                            <small class="text-muted">صفحة 17</small>
+                        </a>
+                        <!-- end unit 1 lesson 1-->
+                        <!-- start unit 1 lesson 2-->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الأول</h5>
+                                <small class="text-muted">الفصل الثاني</small>
+                            </div>
+                            <p class="mb-1">توحيد الربوبية
+                            </p>
+                            <small class="text-muted">صفحة 75</small>
+                        </a>
+                        <!-- end unit 1 lesson 2-->
+                        <!-- start unit 1 lesson 3-->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الأول</h5>
+                                <small class="text-muted">الفصل الثالث</small>
+                            </div>
+                            <p class="mb-1">توحيد الألوهية
+                            </p>
+                            <small class="text-muted">صفحة 89</small>
+                        </a>
+                        <!-- end unit 1 lesson 3-->
+                        <!-- start unit 1 lesson 4-->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الأول</h5>
+                                <small class="text-muted">الفصل الرابع</small>
+                            </div>
+                            <p class="mb-1">الحكم بما أنزل الله
+                            </p>
+                            <small class="text-muted">صفحة 135</small>
+                        </a>
+                        <!-- end unit 1 lesson 4-->
+                        <!-- start unit 1 lesson 5-->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الأول</h5>
+                                <small class="text-muted">الفصل الخامس</small>
+                            </div>
+                            <p class="mb-1">الولاء والبراء
+                            </p>
+                            <small class="text-muted">صفحة 159</small>
+                        </a>
+                        <!-- end unit 1 lesson 5-->
+                        <!-- start unit 2 -->
+                        <a href="#nav-history" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">الباب الثاني</h5>
+                            </div>
+                            <p class="mb-1">الإيمان بالملائكة
+                            </p>
+                            <small class="text-muted">صفحة 191</small>
+                        </a>
+                        <!-- end unit 2-->
+
+                    </div>
+                </div>
+                <!-- end tab  -->
+                <!-- start  tab  -->
+                <div class="tab-pane fade align-content-center h-100" id="nav-pdf" role="tabpanel"
                     aria-labelledby="nav-pdf-tab">
                     <a href="https://drive.google.com/file/d/1AuuWS9CzVrsEV4vv9q1Roy29oUzcxEYm/view?usp=sharing "
                         class="btn btn-outline-danger w-100 fs-3 my-5" target="_blank">مشاهدة وتحميل (الشرح)</a>
                     <a href="https://drive.google.com/file/d/1Q-njN9d0ROE_qXZ29BKXXpw4Tm2fzodp/view?usp=sharing "
                         class="btn btn-outline-primary w-100 fs-3" target="_blank">مشاهدة وتحميل (المتن)</a>
                 </div>
+                <!-- end tab  -->
                 <div class="tab-pane fade " id="nav-sound" role="tabpanel" aria-labelledby="nav-sound-tab">
-                    
+
                     <p class="bg-danger text-white rounded-1 py-4">لم يتم تحميل الشرح حتى الأن ولكن إنتظر لتجد الخبر
                         السار </p>
                 </div>
+                <!-- end tab  -->
             </div>
         </section>
         <!-- start body -->
