@@ -37,29 +37,218 @@
         <!-- start body -->
         <section class="fqhBody my-5 fs-3 container text-center" id="fqh">
             <h3 class="sectionHeader d-inline-flex p-2 mb-5 ">الفقه</h3>
-
+            <!-- tab button  -->
             <nav class="py-5">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
+                    <button class="nav-link active" id="nav-history-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-history" type="button" role="tab" aria-controls="nav-history"
+                        aria-selected="false">نسخة الكتاب</button>
+                    <button class="nav-link " id="nav-pdf-tab" data-bs-toggle="tab" data-bs-target="#nav-pdf"
                         type="button" role="tab" aria-controls="nav-pdf" aria-selected="false">نسخة الكتاب</button>
                     <button class="nav-link " id="nav-sound-tab" data-bs-toggle="tab" data-bs-target="#nav-sound"
                         type="button" role="tab" aria-controls="nav-sound" aria-selected="true">المكتبة الصوتية</button>
 
                 </div>
             </nav>
+            <!-- tab button  -->
+
+
+
+            <!-- tab start  -->
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active  align-content-center h-100" id="nav-pdf" role="tabpanel"
+                <!-- tab 1 -->
+                <div class="tab-pane fade show active  align-content-center h-100" id="nav-history" role="tabpanel"
+                    aria-labelledby="nav-history-tab">
+                    <!-- start list -->
+                    <div class="list-group">
+                        <!-- start unit  -->
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>كتابين </small>
+                            </div>
+                            <p class="mb-1">الفقه</p>
+                        </a>
+                        <!-- end unit  -->
+                        <!-- start section  -->
+                        <a href="#" class="list-group-item list-group-item-action active bg-secondary text-white"
+                            aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص 1</h5>
+                                <small>10 أبواب </small>
+                            </div>
+                            <p class="mb-1">كتاب الطهارة </p>
+                        </a>
+                        <!-- end section  -->
+                        <!-- start lesson  1-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit1"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            data-title="في أحكام اطهارة والمياه">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص 1</h5>
+                                <small class="text-muted">الباب الأول </small>
+                            </div>
+                            <p class="mb-1">في أحكام اطهارة والمياه</p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  1-->
+
+
+
+
+                        <!-- start lesson  2-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit2"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-title="في الأنية  ص6">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"> ص6</h5>
+                                <small class="text-muted">الباب الثاني </small>
+                            </div>
+                            <p class="mb-1">في الأنية ص6</p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  2-->
+
+
+
+                        <!-- start lesson  3-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit3"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            data-title="في قضاء الحاجة وأدابها  ص 9">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"> ص 9 </h5>
+                                <small class="text-muted">الباب الثالث </small>
+                            </div>
+                            <p class="mb-1"> في قضاء الحاجة وأدابها</p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  3-->
+
+
+
+                        <!-- start lesson  4-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit4"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            data-title="في السواك وسنن الفطرة ص 13 ">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص 13 </h5>
+                                <small class="text-muted">الباب الرابع </small>
+                            </div>
+                            <p class="mb-1">في السواك وسنن الفطرة </p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  4-->
+
+
+
+                        <!-- start lesson  5-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit5"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-title="في الوضوء ص 17">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"> ص 17 </h5>
+                                <small class="text-muted">الباب الخامس </small>
+                            </div>
+                            <p class="mb-1">في الوضوء</p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  5-->
+
+
+
+                        <!-- start lesson  6-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit6"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            data-title="في المسح على الخفين والعمامة والجبيرة ص 24">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص 24 </h5>
+                                <small class="text-muted">الباب السادس </small>
+                            </div>
+                            <p class="mb-1">في المسح على الخفين والعمامة والجبيرة</p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  6-->
+
+
+
+                        <!-- start lesson  7-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit7"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-title="في الغسل  ص28 ">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص28 </h5>
+                                <small class="text-muted">الباب السابع </small>
+                            </div>
+                            <p class="mb-1">في الغسل </p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  7-->
+
+
+
+                        <!-- start lesson  8-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit8"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-title="في التيمم ص 32">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص 32</h5>
+                                <small class="text-muted">الباب الثامن </small>
+                            </div>
+                            <p class="mb-1">في التيمم </p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  8-->
+
+
+
+                        <!-- start lesson  9-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit9"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            data-title="في النجاسات وكيفية تطهيرها  ص 35">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص 35</h5>
+                                <small class="text-muted">الباب التاسع </small>
+                            </div>
+                            <p class="mb-1">في النجاسات وكيفية تطهيرها </p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  9-->
+
+
+
+                        <!-- start lesson  10-->
+                        <a href="#" class="list-group-item list-group-item-action showModal" data-unit="unit10"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                            data-title="في الحيض و النفاس  ص 38">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">ص 38</h5>
+                                <small class="text-muted">الباب العاشر </small>
+                            </div>
+                            <p class="mb-1">في الحيض و النفاس </p>
+                            <small class="text-muted">يمكنك الضغط لرؤية المسائل التي في الباب</small>
+                        </a>
+                        <!-- end lesson  10-->
+
+
+
+
+
+                    </div>
+                    <!-- end list -->
+                </div>
+                <!-- tab 1 -->
+                <!-- tab 2 -->
+                <div class="tab-pane fade   align-content-center h-100" id="nav-pdf" role="tabpanel"
                     aria-labelledby="nav-pdf-tab">
-                    <a href="https://drive.google.com/file/d/1y0SzSetkLQP7zvWxL_Su1p2WvMqeGtvA/view?usp=sharing "
+                    <a href="https://drive.google.com/file/d/1m3_I9BtTCersnVwbDgx4_mOu7ESQ9qsb/view?usp=sharing "
                         class="btn btn-outline-danger w-100 fs-3" target="_blank">مشاهدة وتحميل</a>
                 </div>
+                <!-- tab 2 -->
+                <!-- tab 3 -->
                 <div class="tab-pane fade " id="nav-sound" role="tabpanel" aria-labelledby="nav-sound-tab">
-                    <!-- <a href="https://drive.google.com/file/d/1-597huBzdizLSqRfVX58GVuoZoCsMvCu/view?usp=sharing"
-                        class="btn btn-outline-primary fs-4" target="_blank">شرح الفقه </a> -->
+
                     <p class="bg-danger text-white rounded-1 py-4">لم يتم تحميل الشرح حتى الأن ولكن إنتظر لتجد الخبر
                         السار </p>
                 </div>
+                <!-- tab 3 -->
             </div>
+            <!-- tab end -->
+
         </section>
         <!-- start body -->
 
@@ -106,7 +295,29 @@
     </footer>
 
     <!-- endfooter  -->
-
+    <!-- Start modal  -->
+    <!-- Modal -->
+    <div class="fqh-modal">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close modal-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary modal-close"
+                            data-bs-dismiss="modal">إغلاق</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end  modal  -->
 
     <script>
         let ELM = "";

@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Harmattan', sans-serif;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 .navbar-brand {
@@ -48,7 +48,9 @@
     font-size: 7vw;
 } */
 
-
+.scrollTop {
+    transition: all .3s;
+}
 #notifyIcon{
     top: 50vh;
     right: 8px;
