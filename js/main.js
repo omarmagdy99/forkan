@@ -234,6 +234,8 @@ fqhData = {
     "المسألة الثامنة : ما يكره في الصلاة  ص58",
   ],
 };
+//end fqh data
+
 let fqhShowModalButton = document.querySelectorAll(".showModal");
 let fqhModal = document.querySelector(".fqh-modal #staticBackdrop .modal-body");
 let fqhModalTitle = document.querySelector(
