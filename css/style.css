@@ -25,11 +25,11 @@
     border-bottom: 4px solid #cfe2ff;
 }
 
-.fqhBody, .aqidhBody,.tzkiaBody {
+.fqhBody, .aqidhBody, .tzkiaBody {
     width: 100%;
 }
 
-.fqhHeader, .aqidhHeader, .nawawyHeader,.tagwidHeader, .tzkiaHeader {
+.fqhHeader, .aqidhHeader, .nawawyHeader, .tagwidHeader, .tzkiaHeader {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -51,7 +51,8 @@
 .scrollTop {
     transition: all .3s;
 }
-#notifyIcon{
+
+#notifyIcon {
     top: 50vh;
     right: 8px;
     border: 1px solid white;
@@ -60,22 +61,24 @@
     height: 45px;
 
 }
-#notifyIcon .notfyAlarm{
+
+#notifyIcon .notfyAlarm {
     top: 8px;
     left: 8px;
     font-size: 30px;
 }
-#notifyIcon .notify{
+
+#notifyIcon .notify {
     top: -5px;
     left: -20px;
-    width :30px;
-    
+    width: 30px;
+
 }
 
 
 
 /* scroll to top button  */
-.scrollTop{
+.scrollTop {
     right: 20px;
     bottom: -70px;
     width: 40px;
@@ -152,7 +155,19 @@
 
 }
 
+
+/* nawawyEX page */
+.nawawyExplain {
+    margin-top: 87px;
+    min-height: 100vh;
+}
+.nawawyExplain .head{
+    
+}
+
+/* nawawyEX page */
 /* nawawy page */
+
 
 /* tagwid page */
 .tagwidHeader {

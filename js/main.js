@@ -140,7 +140,7 @@ scrollBtn.addEventListener("click", () => {
 // scroll to top
 
 // start fqh data
-fqhData = {
+let fqhData = {
   unit1: [
     "المسألة الأولى: في التعريف بالطهارة وأهميتها ص 1",
     "المسألة الثانية : الماء الذي تحصل به الطهارة ص 2   ",
@@ -233,8 +233,264 @@ fqhData = {
     "المسألة السابعة: مبطلاتها  ص57",
     "المسألة الثامنة : ما يكره في الصلاة  ص58",
   ],
+  fasting1: [
+    "المسألة الأولى: تعريف الصيام ص 149",
+    "المسألة الثانية: حكم صيام رمضان ودليل ذلك ص 149",
+    "المسألة الثالثة: أقسام الصيام ص 150",
+    "المسألة الرابعة: فضل صيام شهر رمضان، والحكمة من مشروعية صومه ص 151",
+    "المسألة الخامسه: شروط وجوب صيام رمضان ص 151",
+    "المسألة السادسة:ثبوت دخول شهر رمضان وأنقضائه ص 152",
+    "المسألة السابعة: وقت النية في الصوم وحكمها  ص 153",
+  ],
+  fasting2: [
+    "المسألة الأولى:الأعذار المبيحة للفطر في رمضان 154 ص ",
+    "المسألة الثانية: مفطرات الصائم 156 ص ",
+  ],
+  fasting3: [
+    "المسألة الأولى:مستحبات الصيام  159 ص ",
+    "المسألة الثانية: مكروهات الصيام 160 ص ",
+  ],
+  fasting4: [
+    "المسألة الأولى:قضاء الصيام  162 ص ",
+    "المسألة الثانية: الصيام المستحب  162 ص ",
+    "المسألة الثالثة: ما يكره ويحرم من الصيام 162 ص   ",
+  ],
+  fasting5: [
+    "المسألة الأولى:تعريف الإعتكاف  167 ص ",
+    "المسألة الثانية: شروط الإعتكاف  167 ص ",
+    "المسألة الثالثة: زمان الإعتكاف ومستحباته وما يباح للمعتكف 168 ص ",
+    "المسألة الرابعة: مبطلات الإعتكاف 170 ص",
+  ],
+  prayer44: [
+    "المسألة الثامنة: ما يكره في الصلاة  58 ص ",
+    "المسألة التاسعة: حكم تارك الصلاة 60 ص ",
+  ],
+  prayer5: [
+    "المسألة الأولى:فضلها والحكمة من مشروعيتها 62 ص ",
+    "المسألة الثانية: في أقسامها 62 ص ",
+    "المسألة الثالثة: ما تسن له الجماعة من صلاة التطوع 63 ص",
+    "المسألة الرابعة: في عدد الرواتب 63 ص ",
+    "المسألة الخامسه:حكم الوتر وفضله ووقته 64 ص",
+    "المسألة السادسة:صفة الوتر وعدد ركعاته 65 ص ",
+    "المسألة السابعة: الأوقات المنهي عن النافلة فيها  66 ص ",
+  ],
+  prayer6: [""],
 };
+
+let term2 = {
+  fqh: [
+    {
+      topic: "fasting",
+      count: 1,
+      page: 149,
+      section: "الباب الأول",
+      sectionName: "في مقدمات الصيام",
+    },
+    {
+      topic: "fasting",
+      count: 2,
+      page: 154,
+      section: "الباب الثاني",
+      sectionName: "في الأعذار المبيحة للفطر ومفطرات الصائم",
+    },
+    {
+      topic: "fasting",
+      count: 3,
+      page: 159,
+      section: "الباب الثالث",
+      sectionName: "مستحبات الصيام وكروهاته",
+    },
+    {
+      topic: "fasting",
+      count: 4,
+      page: 162,
+      section: "الباب الرابع",
+      sectionName: "في القضاء والصيام والمستحب وما يكره ويحرم من الصيام",
+    },
+    {
+      topic: "fasting",
+      count: 5,
+      page: 167,
+      section: "الباب الخامس",
+      sectionName: "في الإعتكاف",
+    },
+    {
+      topic: "prayer",
+      count: 44,
+      page: 58,
+      section: "الباب الرابع",
+      sectionName:
+        "في شروط الصلاة وأركانها وأدلة ذلك وحكم تاركها (من أول مسألة ما يكره في الصلاة)",
+    },
+    {
+      topic: "prayer",
+      count: 5,
+      page: 62,
+      section: "الباب الخامس",
+      sectionName: "في صلاة التطوع",
+    },
+  ],
+  tazkia: [
+    {
+      topic: "tazkia",
+      page: 43,
+      sectionName: "أحوال القلب وأقسامها",
+      content: [
+        {
+          page: 53,
+          section: "القسم السادس",
+          sectionName: "علامات مرض القلب",
+        },
+        {
+          page: 53,
+          section: "القسم السابع",
+          sectionName: "علامات صحة القلب",
+        },
+      ],
+    },
+    {
+      topic: "tazkia",
+      page: 62,
+      sectionName: "أسباب مرض القلب وسمومه الضارة",
+    },
+  ],
+};
+
 //end fqh data
+
+// start term 2 fqh
+let fastingDiv = document.querySelector(".term-2 .fasting");
+let prayerDiv = document.querySelector(".term-2 .prayer");
+if (fastingDiv != null && prayerDiv != null) {
+  for (let i = 0; i < term2.fqh.length; i += 1) {
+    if (term2.fqh[i].topic == "fasting") {
+      fastingDiv.innerHTML += `
+  <!-- start lesson  ${i + 1}-->
+  <a href="#" class="list-group-item
+      list-group-item-action showModal"
+      data-unit="fasting${term2.fqh[i].count}"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+      data-title="${term2.fqh[i].sectionName}">
+      <div class="d-flex w-100
+          justify-content-between">
+          <h5 class="mb-1">ص ${term2.fqh[i].page}</h5>
+          <small class="text-muted">${term2.fqh[i].section}
+          </small>
+      </div>
+      <p class="mb-1">${term2.fqh[i].sectionName}</p>
+      <small class="text-muted">يمكنك الضغط لرؤية
+          المسائل التي في الباب</small>
+  </a>
+  <!-- end lesson  ${i + 1}-->
+`;
+    }
+    if (term2.fqh[i].topic == "prayer") {
+      prayerDiv.innerHTML += `
+    <!-- start lesson  ${i + 1}-->
+    <a href="#" class="list-group-item
+        list-group-item-action showModal"
+        data-unit="prayer${term2.fqh[i].count}"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+        data-title="${term2.fqh[i].sectionName}">
+        <div class="d-flex w-100
+            justify-content-between">
+            <h5 class="mb-1">ص ${term2.fqh[i].page}</h5>
+            <small class="text-muted">${term2.fqh[i].section}
+            </small>
+        </div>
+        <p class="mb-1">${term2.fqh[i].sectionName}</p>
+        <small class="text-muted">يمكنك الضغط لرؤية
+            المسائل التي في الباب</small>
+    </a>
+    <!-- end lesson  ${i + 1}-->
+  `;
+    }
+  }
+}
+// end term 2 fqh
+
+// Start term 2 nawawy
+let totalNawawy2 = document.querySelector(".term-2 .total-nawawy");
+let nawawyDiv = document.querySelector(".term-2 .nawawy-section");
+if (nawawyDiv != null) {
+  let nawawyCount2 = {
+    start: 20,
+    end: 27,
+  };
+  totalNawawy2.innerHTML += ` ${nawawyCount2.end - nawawyCount2.start}`;
+  for (let i = nawawyCount2.start; i < nawawyCount2.end; i += 1) {
+    nawawyDiv.innerHTML += `
+    <!-- start section H ${i}  -->
+    <a href="/nawawyExplain.html#${i}"
+        class="list-group-item list-group-item-action">
+        <div
+            class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"> ${allNawawy[i].hadith
+              .split("\n")
+              .slice(0, 1)
+              .join(" ")} </h5>
+            <small class="text-muted">${allNawawy[i].head}</small>
+        </div>
+        <p class="mb-1">${allNawawy[i].hadith}</p>
+        <small class="text-muted">يمكنك الضغط لرؤية شرح الحديث</small>
+    </a>
+    <!-- end section H ${i}  -->
+`;
+  }
+}
+// end term 2 nawawy
+
+// start term 2 tazkia
+let tazkiaDiv = document.querySelector(".term-2 .tazkia-section");
+let tazkiaSectionCount;
+if (tazkiaDiv != null) {
+  // totalNawawy2.innerHTML += ` ${term2.tazkia.length}`;
+  for (let i = 0; i < term2.tazkia.length; i += 1) {
+    if (term2.tazkia[i].content != undefined) {
+      tazkiaSectionCount = term2.tazkia[i].content.length;
+    } else {
+      tazkiaSectionCount = 1;
+    }
+
+    tazkiaDiv.innerHTML += `
+    <!-- start section  -->
+    <a href="#" class="list-group-item
+    list-group-item-action active bg-secondary
+    text-white"
+        aria-current="true">
+        <div class="d-flex w-100
+    justify-content-between">
+            <h5 class="mb-1">ص ${term2.tazkia[i].page}</h5>
+            <small> عدد الأقسام ${tazkiaSectionCount}  </small>
+        </div>
+        <p class="mb-1">${term2.tazkia[i].sectionName}</p>
+    </a>
+    <!-- end section  -->
+`;
+
+    if (term2.tazkia[i].content != undefined) {
+      for (let x = 0; x < term2.tazkia[i].content.length; x += 1) {
+        tazkiaDiv.innerHTML += `
+    <!-- start lesson  1-->
+    <a href="#" class="list-group-item
+        list-group-item-action ">
+        <div class="d-flex w-100
+            justify-content-between">
+            <h5 class="mb-1">ص ${term2.tazkia[i].content[x].page}</h5>
+            <small class="text-muted">${term2.tazkia[i].content[x].section}
+            </small>
+        </div>
+        <p class="mb-1">${term2.tazkia[i].content[x].sectionName} </p>
+    </a>
+    <!-- end lesson  1-->`;
+      }
+      console.log(term2.tazkia[i].content);
+    }
+  }
+}
+// end term 2 tazkia
 
 let fqhShowModalButton = document.querySelectorAll(".showModal");
 let fqhModal = document.querySelector(".fqh-modal #staticBackdrop .modal-body");

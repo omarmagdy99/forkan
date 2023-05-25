@@ -26,11 +26,11 @@
         </header>
         <!-- end header  -->
 
-
         <!-- start main  -->
         <main>
             <!-- Start homeHeader -->
-            <section class="tzkiaHeader text-white d-flex justify-content-center
+            <section
+                class="tzkiaHeader text-white d-flex justify-content-center
                 align-items-center flex-column">
                 <h1 class=" headerH1 fs-md-1">مادة التزكية</h1>
                 <p class="fs-md-4 headerP"> ( الإِيمَانُ بِضْعٌ وَسَبْعُونَ أَوْ
@@ -48,11 +48,16 @@
                 <!-- tab button  -->
                 <nav class="py-5">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-history-tab"
+                        <button class="nav-link " id="nav-history-tab"
                             data-bs-toggle="tab"
                             data-bs-target="#nav-history" type="button"
                             role="tab" aria-controls="nav-history"
-                            aria-selected="false">أقسام الكتاب</button>
+                            aria-selected="false">ما تم دراسته في الترم الأول</button>
+                        <button class="nav-link active" id="nav-history-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#nav-history2" type="button"
+                            role="tab" aria-controls="nav-history2"
+                            aria-selected="false">ما تم دراسته في الترم الثاني</button>
                         <button class="nav-link " id="nav-pdf-tab"
                             data-bs-toggle="tab" data-bs-target="#nav-pdf"
                             type="button" role="tab" aria-controls="nav-pdf"
@@ -66,12 +71,10 @@
                 </nav>
                 <!-- tab button  -->
 
-
-
                 <!-- tab start  -->
                 <div class="tab-content" id="nav-tabContent">
                     <!-- tab 1 -->
-                    <div class="tab-pane fade show active align-content-center
+                    <div class="tab-pane fade align-content-center
                         h-100" id="nav-history" role="tabpanel"
                         aria-labelledby="nav-history-tab">
                         <!-- start list -->
@@ -163,7 +166,6 @@
                             </a>
                             <!-- end lesson  5-->
 
-
                             <!-- start section  -->
                             <a href="#" class="list-group-item
                                 list-group-item-action  bg-secondary
@@ -177,7 +179,6 @@
                                 <p class="mb-1">باب فضل العلم والعلماء </p>
                             </a>
                             <!-- end section  -->
-
 
                             <!-- start section  -->
                             <a href="#" class="list-group-item
@@ -193,7 +194,6 @@
                             </a>
                             <!-- end section  -->
 
-
                             <!-- start section  -->
                             <a href="#" class="list-group-item
                                 list-group-item-action  bg-secondary
@@ -207,7 +207,6 @@
                                 <p class="mb-1">أداب المعلم </p>
                             </a>
                             <!-- end section  -->
-
 
                             <!-- start section  -->
                             <a href="#" class="list-group-item
@@ -288,12 +287,34 @@
                             </a>
                             <!-- end lesson  5-->
 
-
                         </div>
                         <!-- end list -->
                     </div>
                     <!-- tab 1 -->
                     <!-- tab 2 -->
+                    <div class="tab-pane fade show active align-content-center
+                h-100 term-2" id="nav-history2" role="tabpanel"
+                        aria-labelledby="nav-history-tab">
+                        <!-- start list -->
+                        <div class="list-group">
+                            <!-- start unit  -->
+                            <a href="#" class="list-group-item
+                        list-group-item-action active"
+                                aria-current="true">
+                                <div class="d-flex w-100
+                            justify-content-between">
+                                    <small>خمس أبواب </small>
+                                </div>
+                                <p class="mb-1">التزكية</p>
+                            </a>
+                            <!-- end unit  -->
+                            <div class="tazkia-section">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab 2 -->
+                    <!-- tab 3 -->
                     <div class="tab-pane fade align-content-center h-100"
                         id="nav-pdf" role="tabpanel"
                         aria-labelledby="nav-pdf-tab">
@@ -302,8 +323,8 @@
                             class="btn btn-outline-danger w-100 fs-3"
                             target="_blank">مشاهدة وتحميل</a>
                     </div>
-                    <!-- tab 2 -->
                     <!-- tab 3 -->
+                    <!-- tab 4 -->
                     <div class="tab-pane fade " id="nav-sound" role="tabpanel"
                         aria-labelledby="nav-sound-tab">
 
@@ -311,7 +332,7 @@
                             تحميل الشرح حتى الأن ولكن إنتظر لتجد الخبر
                             السار </p>
                     </div>
-                    <!-- tab 3 -->
+                    <!-- tab 4 -->
                 </div>
                 <!-- tab end -->
 
@@ -323,31 +344,33 @@
 
         <!-- start footer  -->
         <!-- style="background-color: #929fba" -->
-        <footer class="text-center text-lg-start text-white bg-dark ">
+        <footer
+            class="text-center text-lg-start text-white bg-dark ">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Links -->
-                <section class="">
+                <section class>
                     <!--Grid row-->
                     <div class="row">
                         <!-- Grid column -->
-                        <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold
+                        <div
+                            class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+                            <h6
+                                class="text-uppercase mb-4 font-weight-bold
                                 text-center">
                                 معهد الفرقان
                             </h6>
                             <p class="text-center">
-                                ( يقال لصاحب القرآن اقرأ وارتق ورتل كما كنت ترتل
+                                ( يقال لصاحب القرآن اقرأ وارتق ورتل
+                                كما كنت ترتل
                                 في الدنيا
-                                فإن منزلك عند آخر آية تقرؤها ) رواه أبو داود
+                                فإن منزلك عند آخر آية تقرؤها ) رواه
+                                أبو داود
                                 والترمذي.
 
                             </p>
                         </div>
                         <!-- Grid column -->
-
-
-
 
                     </div>
                     <!--Grid row-->
@@ -356,7 +379,8 @@
                 <!-- Grid container -->
 
                 <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0,
+                <div class="text-center p-3"
+                    style="background-color: rgba(0, 0,
                     0, 0.2)">
                     © 2022 Copyright:
                     <a class="text-white"
@@ -371,7 +395,8 @@
         let ELM = "";
     // let ELM = `<li class="nav-item"><a class="nav-link active  " aria-current="page" href="#test">test</a></li>`;
     </script>
-            <script src="js/main.js"></script>
+
+            <script  src="js/main.js"></script>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/particles.js"></script>
             <script src="js/app.js"></script>
