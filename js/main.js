@@ -423,7 +423,7 @@ if (nawawyDiv != null) {
   for (let i = nawawyCount2.start; i < nawawyCount2.end; i += 1) {
     nawawyDiv.innerHTML += `
     <!-- start section H ${i}  -->
-    <a href="/nawawyExplain.html#${i}"
+    <a href="nawawyExplain.html#${i}"
         class="list-group-item list-group-item-action">
         <div
             class="d-flex w-100 justify-content-between">
