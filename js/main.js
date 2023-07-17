@@ -417,7 +417,7 @@ let nawawyDiv = document.querySelector(".term-2 .nawawy-section");
 if (nawawyDiv != null) {
   let nawawyCount2 = {
     start: 20,
-    end: 27,
+    end: 34,
   };
   totalNawawy2.innerHTML += ` ${nawawyCount2.end - nawawyCount2.start}`;
   for (let i = nawawyCount2.start; i < nawawyCount2.end; i += 1) {
