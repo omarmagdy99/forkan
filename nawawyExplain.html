@@ -33,7 +33,18 @@
                     <div class="head text-center fs-1 fw-bold"></div>
                     <div class="body fs-3 my-5"></div>
                     <div class="footer text-center">
-                        <a href="/nawawy.html" class="btn btn-danger fs-2">رجوع</a>
+                        <div class="row text-center">
+                            <div class="col-4 next">
+
+                            </div>
+                            <div class="col-4">
+                                <a href="nawawy.html"
+                                    class="btn btn-danger fs-2">رجوع</a>
+                            </div>
+                            <div class="col-4 previous">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -89,13 +100,33 @@
             <script src="js/nawawy-all.js"></script>
 
             <script>
-            let numberOfNaw= Number(window.location.href.split("#").slice(1));
-            let NawExHead=document.querySelector(".nawawyExplain .head");
-            let NawExbody=document.querySelector(".nawawyExplain .body");
-                NawExHead.innerHTML+=`<h1>${allNawawy[numberOfNaw].head}</h1>`
+                function getNawawy(){
+
+                    let numberOfNaw= Number(window.location.href.split("#").slice(1));
+                    let NawExHead=document.querySelector(".nawawyExplain .head");
+                    let NawExbody=document.querySelector(".nawawyExplain .body");
+                    let nextBtn=document.querySelector(".nawawyExplain .next");
+            let preBtn=document.querySelector(".nawawyExplain .previous");
+            numberOfNaw < 41 ? nextBtn.innerHTML=`<a href="nawawyExplain.html#${numberOfNaw+1}" class="btn btn-outline-primary fs-2 w-100">التالي</a>`
+                :  numberOfNaw=41;
+                numberOfNaw > 20 ? preBtn.innerHTML=` <a href="nawawyExplain.html#${numberOfNaw-1}"
+                                    class="btn btn-outline-info fs-2 w-100">السابق</a>`
+                :  numberOfNaw=20;
+
+                NawExHead.innerHTML=`<h1>${allNawawy[numberOfNaw].head}</h1>`
                 
-                NawExbody.innerHTML+="<p>"+ allNawawy[numberOfNaw].hadith +"</p> <hr>";
+                NawExbody.innerHTML="<p>"+ allNawawy[numberOfNaw].hadith +"</p> <hr>";
                 NawExbody.innerHTML+=" <p>"+allNawawy[numberOfNaw].description+"</p>"
+            }
+            window.addEventListener('load', () => {
+            getNawawy();    
+            });
+            window.addEventListener('hashchange', () => {
+            getNawawy();    
+            });
+            
+            
+                
             </script>
 
             <script src="js/main.js"></script>
